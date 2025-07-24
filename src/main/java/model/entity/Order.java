@@ -20,6 +20,12 @@ public class Order {
         this.client = client;
     }
 
+    public Order(LocalDateTime date, double totalAmount, Client client) {
+        this.date = date;
+        this.totalAmount = totalAmount;
+        this.client = client;
+    }
+
     public String getId() {
         return id;
     }
