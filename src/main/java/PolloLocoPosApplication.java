@@ -7,7 +7,7 @@ import view.admin.AdminIntranetFrame;
 import view.login.Login;
 import view.pos.PointOfSaleFrame;
 
-public class LaCocheraPosApplication {
+public class PolloLocoPosApplication {
 
     public static void main(String[] args) {
         // Frame theme
