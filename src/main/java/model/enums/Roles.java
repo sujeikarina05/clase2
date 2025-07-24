@@ -1,10 +1,5 @@
 package model.enums;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
-@Getter
-@AllArgsConstructor
 public enum Roles {
     MANAGER("administrador"),
     CASHIER("cajero"),
@@ -13,6 +8,10 @@ public enum Roles {
 
     private final String roleName;
 
+    Roles(String roleName) {
+        this.roleName = roleName;
+    }
+
     public static Roles getRole(String roleName) {
         for (Roles role : Roles.values()) {
             if (role.getRoleName().equals(roleName)) {
@@ -20,5 +19,9 @@ public enum Roles {
             }
         }
         return null;
+    }
+
+    public String getRoleName() {
+        return roleName;
     }
 }

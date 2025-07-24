@@ -1,10 +1,5 @@
 package model.enums;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
-@Getter
-@AllArgsConstructor
 public enum Category {
     CARTA("Carta", "C01"),
     ANTOJITOS("Antojitos","C02"),
@@ -16,6 +11,11 @@ public enum Category {
 
     private final String name;
     private final String id;
+
+    Category(String name, String id) {
+        this.name = name;
+        this.id = id;
+    }
 
     public static Category getCategoryById(String id){
         for (Category category : Category.values()) {
@@ -33,5 +33,13 @@ public enum Category {
             }
         }
         return null;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getId() {
+        return id;
     }
 }
