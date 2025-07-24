@@ -1,24 +1,64 @@
 package model.entity;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
-
 import java.time.LocalDateTime;
 
-@Data
-@RequiredArgsConstructor
-@NoArgsConstructor
 public class Order {
     private String id;
-    @NonNull
     private LocalDateTime date;
-    @NonNull
     private double totalAmount;
     private boolean paid;
-    @NonNull
     private Client client;
+
+    public Order() {
+    }
+
+    public Order(String id, LocalDateTime date, double totalAmount, boolean paid, Client client) {
+        this.id = id;
+        this.date = date;
+        this.totalAmount = totalAmount;
+        this.paid = paid;
+        this.client = client;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
+
+    public double getTotalAmount() {
+        return totalAmount;
+    }
+
+    public void setTotalAmount(double totalAmount) {
+        this.totalAmount = totalAmount;
+    }
+
+    public boolean isPaid() {
+        return paid;
+    }
+
+    public void setPaid(boolean paid) {
+        this.paid = paid;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
 
     public double getIgv() {
         return Math.round(totalAmount * 0.18 * 100.0) / 100.0;
