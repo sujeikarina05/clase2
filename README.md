@@ -1,35 +1,35 @@
-# Point of Sale and Administrative Management System for La Cochera Restaurant
-This project is a point of sale and administrative management application for La Cochera restaurant developed in Java Swing.
+# Sistema de Punto de Venta y Gestión Administrativa para el restaurante Pollo Loco
+Este proyecto es una aplicación de punto de venta y gestión administrativa para el restaurante Pollo Loco desarrollada en Java Swing.
 
-## Overview
-The application follows the Model-View-Controller (MVC) software architecture pattern and has an object-oriented approach. The application consists of 2 main parts:
+## Descripción general
+La aplicación sigue el patrón de arquitectura de software Modelo‑Vista‑Controlador (MVC) y tiene un enfoque orientado a objetos. La aplicación consta de 2 partes principales:
 
-- Point of Sale (POS): This part of the application is used to record sales and generate sales tickets. It is designed to be used by the restaurant employees.
-- Administration Panel: This part of the application is used to manage dishes and view sales reports. It is designed to be used by the restaurant administrator.
+- Punto de Venta (POS): Esta parte de la aplicación se utiliza para registrar ventas y generar tickets. Está pensada para que la utilicen los empleados del restaurante.
+- Panel de Administración: Esta parte de la aplicación se utiliza para gestionar platillos y ver reportes de ventas. Está pensada para el administrador del restaurante.
 
-## Requirements
-Java (version 17 or higher)
+## Requisitos
+Java (versión 17 o superior)
 
-## Application Views
-Some designs may not match those in the final application, as minimal changes have been made to the application design, but the general idea remains the same.
+## Vistas de la aplicación
+Algunos diseños pueden no coincidir con los de la aplicación final, ya que se han realizado cambios mínimos, pero la idea general se mantiene.
 
-### Point of Sale
-![Order Taking](docs/images/pos-1.png "Order Taking")
-![This modal appears when double-clicking a row](docs/images/pos-2.png "Dish Editing")
-![This modal appears when pressing the Next button](docs/images/pos-3.png "Customer Details")
-![Order Confirmation](docs/images/pos-4.png "Order Confirmation")
-![Order Payment](docs/images/pos-5.png "Order Payment")
-![Order Completed](docs/images/pos-6.png "Order Completed")
+### Punto de Venta
+![Toma de Pedido](docs/images/pos-1.png "Toma de Pedido")
+![Este modal aparece al hacer doble clic en una fila](docs/images/pos-2.png "Editar Platillo")
+![Este modal aparece al presionar el botón Siguiente](docs/images/pos-3.png "Detalles del Cliente")
+![Confirmación del Pedido](docs/images/pos-4.png "Confirmación del Pedido")
+![Pago del Pedido](docs/images/pos-5.png "Pago del Pedido")
+![Pedido Completado](docs/images/pos-6.png "Pedido Completado")
 
-### Administration Page
-![Main Dashboard](docs/images/admin-1.png "Main Dashboard")
-![Pie Chart of Top 5 Sold Dishes](docs/images/admin-2.png "Pie Chart of Top 5 Sold Dishes")
-![Dish Management](docs/images/admin-3.png "Dish Management")
+### Página de Administración
+![Panel Principal](docs/images/admin-1.png "Panel Principal")
+![Gráfico de los 5 Platillos Más Vendidos](docs/images/admin-2.png "Gráfico de los 5 Platillos Más Vendidos")
+![Gestión de Platillos](docs/images/admin-3.png "Gestión de Platillos")
 
-## Installation
-1. Clone this repository
-2. Navigate to src/main/java/
-3. Run "LaCocheraPOSApplication.java" to start the application
+## Instalación
+1. Clona este repositorio
+2. Navega a src/main/java/
+3. Ejecuta "PolloLocoPosApplication.java" para iniciar la aplicación
 
-## Usage
-Under construction...
+## Uso
+En construcción...
